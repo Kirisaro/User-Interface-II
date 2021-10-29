@@ -112,17 +112,45 @@ body {
   font-size: 1.8rem;
   line-height: 1.5;
   color: #4f4f4f;
-  background-color: #fbfbfb;
+  background-color: #c7a484;
   font-family: "Source Sans Pro", sans-serif;
 }
 h1 {
   color: #4f4f4f;
   font-size: 6rem;
+  text-align: right;
+}
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+}
+.logos {
+  max-width: 100%;
+}
+.titles {
+  font-size: 2.2rem;
+  padding-left: 2.2rem;
+  display: inline-block;
+  float: right;
+}
+.titles,
+.p {
+  text-align: right;
+  font-family: "Source Sans Pro", sans-serif;
 }
 a {
   text-decoration: none;
   color: #266035;
   font-family: "Source Sans Pro", sans-serif;
+}
+.about {
+  height: 85vh;
+  background-image: url("/images/Lambda-School-Logo.jpg");
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 .container {
   display: flex;
@@ -132,15 +160,28 @@ a {
 }
 .pbutton {
   font-family: "Source Sans Pro", sans-serif;
-  background-color: whitesmoke;
+  background-color: #c7a484;
   color: #266032;
   transition: 2s;
+  text-align: center;
 }
 .pbutton:hover {
   color: azure;
   background-color: lightseagreen;
+  text-align: center;
 }
-
+.cbutton {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #c7a484;
+  color: #266032;
+  transition: 2s;
+  text-align: center;
+}
+.cbutton:hover {
+  color: azure;
+  background-color: lightseagreen;
+  text-align: center;
+}
 /* Header Section Styles */
 nav {
   display: flex;
@@ -151,9 +192,12 @@ nav {
   z-index: 999;
   background-color: rgb(221, 216, 210);
 }
+.logo {
+  width: 5%;
+}
 .links {
   width: 50%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
