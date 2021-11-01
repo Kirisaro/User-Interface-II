@@ -86,6 +86,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
+  border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -104,115 +105,90 @@ nav,
 section {
   display: block;
 }
-/*General Styles*/
-html {
-  font-size: 62.5%;
-}
 body {
-  font-size: 1.8rem;
-  line-height: 1.5;
-  color: #4f4f4f;
-  background-color: #c7a484;
-  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1;
 }
-h1 {
-  color: #4f4f4f;
-  font-size: 6rem;
-  text-align: right;
+header {
+  background-color: lightgrey;
+  padding: 2%;
+  margin-bottom: 2%;
 }
-a {
-  text-decoration: none;
-  color: #266035;
-  font-family: "Source Sans Pro", sans-serif;
-}
-.container2 {
-  display: flex;
-  margin: 15rem;
-}
-.logo {
-  width: 10%;
-}
-.text {
-  padding: 40 25;
-  font-size: 2vh;
-  align-content: center;
+footer {
+  background-color: lightgrey;
   text-align: center;
+  padding: 5%;
 }
-.text,
-.p {
-  text-align: right;
-  font-family: "Source Sans Pro", sans-serif;
+h1, h2, h3{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+h3{
+  text-align: center;
 }
 
-.doesnt-matter {
-  height: 50vh;
-  width: 100vw;
-  background-image: url("/images/portfolio5.jpg");
+.topsection {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
 }
-.container {
+.description{
+  padding: 2%;
+}
+.row{
   display: flex;
-  flex-wrap: wrap;
-  padding: 10%;
   justify-content: space-evenly;
+  flex-direction: row;
+  padding: 2%;
 }
-.pbutton {
-  font-family: "Source Sans Pro", sans-serif;
-  background-color: #c7a484;
-  color: #266032;
-  transition: 2s;
+.portfolio-element{
   text-align: center;
 }
-.pbutton:hover {
-  color: azure;
-  background-color: lightseagreen;
-  text-align: center;
+button{
+  background-color: white;
+  color: black;
+  border: black solid 1px;
+  padding: 1% 1%;
 }
-.cbutton {
-  font-family: "Source Sans Pro", sans-serif;
-  background-color: #c7a484;
-  color: #266032;
-  transition: 2s;
-  display: flex;
+button:hover{
+  background-color: black;
+  color: white;
+  border: white solid 1px;
 }
-.conbutton {
-  font-family: "Source Sans Pro", sans-serif;
-  background-color: #c7a484;
-  color: #266032;
-  transition: 2s;
-  display: flex;
+button a{
+  text-decoration: none;
+  color: inherit;
 }
-.conbutton:hover {
-  color: azure;
-  background-color: lightseagreen;
-  text-align: center;
+/*Responsive Styles*/
+
+/* tablet view - 800px*/
+@media (max-width: 800px) {
+
+  header, footer{
+    justify-content: center;
+    width: 100%;
+  }
+  .links{
+    width: 100%;
+    flex-direction: column;
+  }
+  .row{
+    justify-content: center;
+  }
+  .portfolio-element{
+    margin: 8%;
+  }
 }
-.cbutton:hover {
-  color: azure;
-  background-color: lightseagreen;
-  text-align: center;
+/*mobile view - 500px*/
+@media (max-width: 500px){
+  header, footer{
+    width: 100%;
+  }
+  button{
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio-element{
+    height: 40vh;
+    margin: 5%;
+  }
 }
-/* Header Section Styles */
-nav {
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 999;
-  background-color: rgb(221, 216, 210);
-  padding: 1.1rem;
-}
-.links {
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.doesnt-matter {
-  display: flex;
-  width: 100%;
-}
-/*media query*/
