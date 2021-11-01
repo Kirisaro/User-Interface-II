@@ -134,13 +134,11 @@ h3{
 .description{
   padding: 2%;
 }
-.row{
+.portfolio-element{
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
   padding: 2%;
-}
-.portfolio-element{
   text-align: center;
 }
 button{
@@ -171,24 +169,46 @@ button a{
     width: 100%;
     flex-direction: column;
   }
-  .row{
-    justify-content: center;
-  }
   .portfolio-element{
+    justify-content: center;
     margin: 8%;
   }
+}
+.portfolio-element{
+  height: 40vh;
+  margin: 5%;
+  width: 50%;
 }
 /*mobile view - 500px*/
 @media (max-width: 500px){
   header, footer{
-    width: 100%;
+    justify-content: center;
+    width: 110%;
+  }
+  h1{
+    display: flex;
+    justify-content: center;
+  }
+  .links{
+    flex-wrap: wrap;
+    padding-left: 40%;
   }
   button{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .description{
     display: flex;
     flex-direction: column;
   }
   .portfolio-element{
     height: 40vh;
     margin: 5%;
+    width: 50%;
+  }
+  p{
+    display: flex;
+    align-items: flex-end;
   }
 }
